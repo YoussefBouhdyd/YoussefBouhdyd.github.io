@@ -39,7 +39,7 @@ social:
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
     # The first element serves as the copyright owner's link
-    - www.linkedin.com/in/youssefbouhdyd # change to your Linkedin homepage
+    - https://www.linkedin.com/in/youssefbouhdyd # change to your Linkedin homepage
     - https://github.com/YoussefBouhdyd # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
