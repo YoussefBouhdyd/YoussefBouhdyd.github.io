@@ -13,9 +13,9 @@ tags:
   - incident-response
   - malware-analysis
   - CVE-2024-25600
-img_path: /assets/img/posts/bricksHeist
+img_path: /assets/img/posts/brickHeist.png
 image:
-  path: /assets/img/posts/bricksHeist/bricksHeist.png
+  path: /assets/img/posts/bricksHeist/brickHeist.png
   alt: TryHack3M Bricks Heist
 ---
 ## Overview
