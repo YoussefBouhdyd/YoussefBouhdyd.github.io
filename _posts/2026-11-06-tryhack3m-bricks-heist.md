@@ -1,6 +1,6 @@
 ---
 title: TryHack3M Bricks Heist
-date: 2026-10-23 02:28
+date: 2026-11-06 02:28
 categories:
   - TryHackMe
   - Easy
