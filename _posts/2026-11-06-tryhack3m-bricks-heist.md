@@ -33,12 +33,15 @@ and this what we got
 we observe that there is a http server in the port 80 and 443 , so we add MACHINE_IP with the domain `bricks.thm` in `/etc/hosts` then try access it and see
 what we have, okay the site it is just an image of wall of bricks so I try to go deep in enumeration and start path discovery using `gobuster` but the problem is that the room crashed after starting fuzzing
 ![gobuster](/assets/img/posts/bricksHeist/delay.png){: width="700"}
+
 so I thought that the problem is with the delay or the number of thread in use so I try to reduce the number of threads and increase the delay
 ![gobuster](/assets/img/posts/bricksHeist/delay1.png){: width="700"}
 ![gobuster](/assets/img/posts/bricksHeist/delay2.png){: width="700"}
+
 as you can see it still crashed so I ignore this part and start looking from other side and string with about the technology that run that app itself 
 primary I used `whatweb`
 ![image](/assets/img/posts/bricksHeist/whatweb.png){: width="700"}
+
 and we got a valuable information that the app is made using `WordPress`
 version `6.5` 
 > You can go from here and looking for variabilities for this version.
@@ -46,9 +49,11 @@ version `6.5`
 
 I used `wpscan` for do more scan in wordpress app
 ![image](/assets/img/posts/bricksHeist/brickThem.png){: width="700"}
+
 we can see here that this app use `bricks 1.9.5` theme which might be vulnerable 
 . to make sure I google it 
 ![image](/assets/img/posts/bricksHeist/findingwithgoogle.png){: width="700"}
+
 as you can see it is vulnerable to `CVE-2024-25600`
 
 ## Exploit
@@ -125,6 +130,7 @@ the last question is
 *The wallet address used has been involved in transactions between wallets belonging to which threat group?*
 I go to [blockchain](https://www.blockchain.com/) then I write the wallet address that we find before in the search bar and see the transaction history and looking for that contain bigger number and we find this in the image below with that other wallet address
 ![image](/assets/img/posts/bricksHeist/helper_address.png){: width="700"}
+
 then we google this wallet address to see if i associated to famous group and yeah ! we find it 
 ![image](/assets/img/posts/bricksHeist/group_name.png){: width="700"}
 
