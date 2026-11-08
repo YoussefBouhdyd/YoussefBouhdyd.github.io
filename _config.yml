@@ -119,7 +119,7 @@ actions:
     static_url: false # [ true | false ]
 
 comments:
-  active: giscus
+  provider: giscus
   giscus:
     repo: youssefbouhdyd/youssefbouhdyd.github.io
     repo_id: R_kgDOVULzAQ
